@@ -20,4 +20,57 @@ $(function () {
   // attribute of each time-block be used to do this?
   //
   // TODO: Add code to display the current date in the header of the page.
+  // const day = dayjs().date();
+  const day = dayjs().date();
+  const dayString = String(day);
+  var lastNumber;
+
+  if(dayString.length === 2) {
+    if(dayString < 20 && dayString > 10)
+      lastNumber = dayString;
+    else
+      lastNumber = dayString[dayString.length - 1];
+  }
+  else 
+    lastNumber = dayString[dayString.length - 1];
+
+  var ordinal;
+  switch (lastNumber) {
+    case "1":
+      ordinal = "st";
+      break;
+    case "2":
+      ordinal = "nd"
+      break;
+    case "3":
+      ordinal = "rd";
+      break;
+    case "4":
+    case "5":
+    case "6":
+    case "7":
+    case "8":
+    case "9":
+    case "0":
+    case "10":
+    case "11":
+    case "12":
+    case "13":
+    case "14":
+    case "15":
+    case "16":
+    case "17":
+    case "18":
+    case "19":
+    case "20":
+      ordinal = "th";
+      break;
+    default:
+      console.log("Error Occured.");
+      break;
+  }
+
+  const currentDay = $("#currentDay");
+  const todaysDate = new dayjs().format("dddd, MMMM D");
+  currentDay.text(todaysDate + ordinal);
 });
