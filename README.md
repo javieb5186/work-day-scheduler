@@ -1,6 +1,24 @@
-# 05 Third-Party APIs: Work Day Scheduler
+# Work Day Scheduler
 
-## Your Task
+## Table of Contents
+
+- [Description](#description)
+- [My Task](#my-task)
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+
+## Description
+
+- My motivation with this project, was to provide many users an easy to plan out their day.
+- I built this project to practice my new founding knowledge in the new technologies just learned.
+- Instead of trying to plan your day through your head, you can quickly plan it out on the web.
+- The biggest thing I learned is that you can't use jquery methods without calling the jquery syntax. Even though they equal
+a Jquery variable.
+
+## My Task
 
 Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
@@ -37,63 +55,53 @@ The following animation demonstrates the application functionality:
 <!-- @TODO: create ticket to review/update image) -->
 ![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
 
-## Grading Requirements
+## Usage
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+To use this application. Access the index html or the provided url (). You should be provided with the image below.
 
-This Challenge is graded based on the following criteria:
+![Main Page](Assets/work-day-scheduler-main.png)
 
-### Technical Acceptance Criteria: 40%
+Select any empty text box to begin typing what you want on that planner. 
 
-* Satisfies all of the above acceptance criteria plus the following:
+![Text in text box](Assets/work-day-scheduler-text.png)
 
-  * Uses a date utility library to work with date and time
+Then when are you satisfied with your text, then hit the save button to save it to your local storage. 
 
-### Deployment: 32%
+![Save button](Assets/work-day-scheduler-save.png)
 
-* Application deployed at live URL
+When you are done saving all that you want and you may leave webpage. Your saved text will display back to where you saved 
+it from. 
 
-* Application loads with no errors
+To remove what you have saved. Simply just delete the text and save. 
 
-* Application GitHub URL submitted
+![Empty text boxes](assets/work-day-scheduler-main.png)
 
-* GitHub repo contains application code
+## Credits
 
-### Application Quality: 15%
+To add the ordinal, I referenced: https://www.britannica.com/dictionary/eb/qa/How-To-Write-Ordinal-Numbers 
 
-* Application user experience is intuitive and easy to navigate
+Technologies used: https://day.js.org/en/ 
 
-* Application user interface style is clean and polished
+## License
 
-* Application resembles the mock-up functionality provided in the Challenge instructions
+MIT License
 
-### Repository Quality: 13%
+Copyright (c) 2023 javieb5186
 
-* Repository has a unique name
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-* Repository follows best practices for file structure and naming conventions
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
-- - -
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
