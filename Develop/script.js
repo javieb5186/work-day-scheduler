@@ -1,5 +1,7 @@
+// Once the document has loaded, then call the function below.
 $(function () {
 
+  // ----- Get all buttons, add event handlers, and save when clicked -----
   const buttons = $(".time-block").children("button");
 
   for (let i = 0; i < buttons.length; i++) {
@@ -9,7 +11,8 @@ $(function () {
       localStorage.setItem(id, value);
     });
   }
-
+  //----------------------------------------------------------------------------------------------
+  //Get every first div text content and determine past, present, future based on the current time.
   const time = dayjs().format('H');
   const timeBlocks = $(".time-block").children("div:first-child");
 
@@ -39,7 +42,8 @@ $(function () {
         $(timeBlocks[i]).parent().addClass("present");
     }
   }
-
+  //----------------------------------------------------------------------------------------------
+  //----- Get all the hours that could be stored, and fill the text area value if not null -------
   for (let i = 1; i < 25; i++) {
     try {
       let item = localStorage.getItem("hour-" + i);
@@ -49,7 +53,8 @@ $(function () {
       console.log(error); 
     }
   }
-
+  //----------------------------------------------------------------------------------------------
+  // Setup the ordinals based on the current day and display the current date in a specfic format.
   const day = dayjs().date();
   const dayString = String(day);
   var lastNumber;
@@ -100,6 +105,7 @@ $(function () {
   }
 
   const currentDay = $("#currentDay");
-  const todaysDate = new dayjs().format("dddd, MMMM D");
+  const todaysDate = dayjs().format("dddd, MMMM D");
   currentDay.text(todaysDate + ordinal);
+  //----------------------------------------------------------------------------------------------
 });
